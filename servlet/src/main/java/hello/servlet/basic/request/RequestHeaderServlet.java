@@ -1,5 +1,6 @@
-package hello.servlet.basic;
+package hello.servlet.basic.request;
 
+import hello.servlet.basic.HelloServlet;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import java.util.Enumeration;
 
 @WebServlet(name = "requestHeaderServlet", urlPatterns = "/request-header")
-public class RequestHeaderServlet extends HelloServlet{
+public class RequestHeaderServlet extends HelloServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
